@@ -1,0 +1,33 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Unit Converter</h1>
+        <section class="calc">
+            <div class="calc__upperhalf">
+                <h2>Metric/Imperial unit conversion</h2>
+                <div>
+                    <p class="enter-value">Enter a value</p>
+                    <input id="num" type="number" class="form__input" onchange="displayResults()"
+                    ></input>
+                </div>
+            </div>
+            <div class="calc__lowerhalf">
+              <div class="calc__units">
+                <h3>Length (Meter/Feet)</h3>
+                <p id="length-conv"></p>
+              </div>
+              <div class="calc__units">
+                <h3>Volume (Liters/Gallons)</h3>
+                <p id="volume-conv"></p>
+              </div>
+              <div class="calc__units">
+                <h3>Mass (Kilograms/Pounds)</h3>
+                <p id="mass-conv"></p>
+              </div>
+            </div>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
